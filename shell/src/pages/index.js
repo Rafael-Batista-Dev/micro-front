@@ -11,9 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Test micro frontend</a>
-        </h1>
+        <h1 className={styles.title}>Welcome to micro frontend</h1>
       </main>
 
       <footer className={styles.footer}>Powered by Rafael Batista</footer>
