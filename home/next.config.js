@@ -8,7 +8,7 @@ module.exports = {
     if (!options.isServer) {
       config.plugins.push(
         new NextFederationPlugin({
-          name: "home",
+          name: "shop",
           filename: "static/chunks/remoteEntry.js",
           remotes: {
             home: "home@http://localhost:3000/_next/static/chunks/remoteEntry.js",
@@ -17,19 +17,17 @@ module.exports = {
               "checkout@http://localhost:3002/_next/static/chunks/remoteEntry.js",
           },
           exposes: {
-            "./NavBar": "./components/NavBar.js",
-            "./Footer": "./components/Footer.js",
+            "./NavBar": "./src/components/NavBar.js",
+            "./Footer": "./src/components/Footer.js",
           },
           shared: {},
           extraOptions: {
-            exposePages: true,
             enableImageLoaderFix: true,
             enableUrlLoaderFix: true,
           },
         })
       );
     }
-
     return config;
   },
 };

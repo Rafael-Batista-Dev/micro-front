@@ -11,14 +11,14 @@ module.exports = {
           name: "checkout",
           filename: "static/chunks/remoteEntry.js",
           remotes: {
+            home: "home@http://localhost:3000/_next/static/chunks/remoteEntry.js",
+            shop: "shop@http://localhost:3001/_next/static/chunks/remoteEntry.js",
             checkout:
-              "checkout@http://localhost:3001/_next/static/chunks/remoteEntry.js",
+              "checkout@http://localhost:3002/_next/static/chunks/remoteEntry.js",
           },
           exposes: {
             // pages
             "./pages/checkout/index": "./pages/checkout/index.js",
-            "./pages/checkout/products/[...slug]":
-              "./pages/checkout/products/[...slug].js",
             "./pages/checkout/test-webpack-png":
               "./pages/checkout/test-webpack-png.js",
             "./pages/checkout/test-webpack-svg":
@@ -26,12 +26,12 @@ module.exports = {
             "./pages/checkout/exposed-pages":
               "./pages/checkout/exposed-pages.js",
             // components
-            "./useCustomRemoteHook": "./components/useCustomRemoteHook.js",
-            "./WebpackSvg": "./components/WebpackSvg.js",
-            "./WebpackPng": "./components/WebpackPng.js",
+            // "./useCustomRemoteHook": "./components/useCustomRemoteHook.js",
+            // "./WebpackSvg": "./components/WebpackSvg.js",
+            // "./WebpackPng": "./components/WebpackPng.js",
             // utilities
-            "./pages/_menu": "./pages/_menu.js",
-            "./pages-map": "./pages-map.js",
+            // "./pages/_menu": "./pages/_menu.js",
+            // "./pages-map": "./pages-map.js",
           },
           extraOptions: {
             enableImageLoaderFix: true,
