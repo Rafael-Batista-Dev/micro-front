@@ -13,8 +13,6 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to micro frontend</h1>
       </main>
-
-      <footer className={styles.footer}>Powered by Rafael Batista</footer>
     </div>
   );
 }
