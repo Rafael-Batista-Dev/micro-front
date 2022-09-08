@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Container from "../components/Container";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Shop</h1>
+        <Container />
       </main>
     </div>
   );

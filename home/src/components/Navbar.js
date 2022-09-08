@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function nav() {
+function Nav() {
   return (
     <div
       style={{
@@ -33,4 +33,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;
